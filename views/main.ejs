@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>To-Do-List Website</title>
+</head>
+<body>
+    <div class="title-section" id="heading">
+        <h1> <%= DaysOfCount %> </h1>
+    </div>
+    <div class="box">
+        <ul class="custom-checklist">
+            <% for(let i = 0; i < newListItem.length; i++){ %>
+                <li>
+                    <input type="checkbox" id="<%= 'item' + (i+4) %>"> <!-- Checkbox -->
+                    <label for="<%= 'item' + (i+4) %>"><%= newListItem[i] %></label> <!-- Label for the checkbox -->
+                </li>
+            <% } %>
+            <form class="item" action="/" method="post">
+                <input type="text" name="ItemAdded" placeholder="Add New List">
+                <button class="add-button" type="submit">+</button>
+            </form>
+        </ul>
+        <div class="button-section">
+            <button class="delete-button">Delete</button>
+        </div>
+    </div>
+</body>
+<script src="/public/script.js"></script>
+</html>
+

@@ -1,0 +1,160 @@
+html{
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 1000px;
+    font-family: 'Roboto';
+}
+
+div h1{
+    color: #fff;
+    padding: 10px;
+    font-family: 'Roboto' !important;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #00204a;
+}
+
+
+#heading{
+    background-color: #A683E3;
+    text-align: center;
+}
+.title-section {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+.box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+/* checklist costum decoration */
+/* Customize the checkbox appearance */
+.custom-checklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.custom-checklist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.custom-checklist input[type="checkbox"] {
+    width: 20px; /* Adjust the size of the checkbox */
+    height: 20px; /* Adjust the size of the checkbox */
+    margin-right: 10px; /* Spacing between the checkbox and label */
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* Remove default appearance for WebKit browsers */
+    border: 2px solid #A683E3; /* Border color for the checkbox */
+    border-radius: 3px; /* Rounded corners for the checkbox */
+    outline: none; /* Remove outline on focus */
+}
+
+.custom-checklist input[type="checkbox"]:checked {
+    background-color: #A683E3; /* Background color when checked */
+    border: 2px solid #A683E3; /* Border color when checked */
+}
+
+.custom-checklist label {
+    font-size: 16px; /* Adjust label text size */
+    color: #00204a; /* Text color for the label */
+}
+
+
+input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+}
+
+/* Input elements styles */
+input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 100;
+    width: 313px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+input[type="checkbox"] {
+    margin: 20px;
+}
+
+.add-button {
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #A683E3;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.button-section{
+    padding: 0 0 20px 20px;
+}
+
+.delete-button{
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #A683E3;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+    margin: auto;
+    text-align: center;
+}
+
+::placeholder {
+    color: grey;
+    opacity: 1;
+    font-weight: 100;
+}
+
+/* Add the strikethrough effect for checked items */
+.custom-checklist .checked label {
+    text-decoration: line-through;
+    color: #ccc;
+}
